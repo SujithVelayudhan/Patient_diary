@@ -1,6 +1,7 @@
 package com.example.sujith.patient_diary;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.animation.Animation;
@@ -12,6 +13,7 @@ public class splash extends AppCompatActivity {
 
     ImageView splap;
     TextView tvsplashp;
+    Typeface myfont;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +22,8 @@ public class splash extends AppCompatActivity {
 
         splap=(ImageView)findViewById(R.id.spla);
         tvsplashp=(TextView)findViewById(R.id.tv_splash);
+        myfont=Typeface.createFromAsset(this.getAssets(),"fonts/font_1.ttf");
+        tvsplashp.setTypeface(myfont);
 
         Thread T=new Thread()
         {
