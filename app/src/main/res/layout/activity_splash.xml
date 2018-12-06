@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".splash"
+    android:orientation="vertical"
+    android:padding="15dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PATIENT DIARY"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:textColor="@color/colorlightgreen"
+        android:layout_marginTop="50dp"
+        android:id="@+id/tv_splash"
+
+        />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="350dp"
+        android:background="@drawable/hospital_sign_1"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:id="@+id/spla"
+        />
+
+
+
+</LinearLayout>
