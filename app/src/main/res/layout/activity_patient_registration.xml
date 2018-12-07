@@ -7,7 +7,8 @@
     tools:context=".patient_registration"
     android:orientation="vertical"
     android:background="@drawable/background"
-    android:padding="15dp">
+    android:padding="15dp"
+    >
 
     <ImageView
         android:layout_width="wrap_content"
@@ -28,11 +29,73 @@
         android:layout_marginTop="10dp"
         />
 
-    <TextView
-        android:layout_width="200dp"
+    <EditText
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:hint="email id"
+        android:hint="Email id"
+        android:id="@+id/pat_email"
+        android:textColor="@color/colorwhite"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:inputType="text"
+        android:maxLines="1"
+        android:drawableStart="@drawable/ic_email"
+        android:drawableLeft="@drawable/ic_email"
+        android:drawablePadding="10dp"
+        />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:id="@+id/pat_password"
+        android:textColor="@color/colorwhite"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:elevation="50dp"
+        android:drawableStart="@drawable/ic_password"
+        android:drawableLeft="@drawable/ic_email"
+        android:drawablePadding="10dp"
+        />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Login"
+        android:id="@+id/pat_logB"
+        android:textStyle="bold"
+        android:textColor="@color/colorwhite"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/round"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Forgot Password?"
+        android:textColor="@color/colorwhite"
+        android:textStyle="bold"
+        android:layout_marginLeft="40dp"
 
         />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Register Here"
+            android:textColor="@color/colorwhite"
+            android:textStyle="bold"
+            android:layout_marginLeft="65dp"
+
+            />
+    </LinearLayout>
+
 
 </LinearLayout>

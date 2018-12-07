@@ -44,6 +44,7 @@
         android:orientation="horizontal"
         android:gravity="center"
         android:layout_marginTop="50dp"
+        android:id="@+id/patient_layout"
         >
         <ImageView
             android:layout_width="wrap_content"
