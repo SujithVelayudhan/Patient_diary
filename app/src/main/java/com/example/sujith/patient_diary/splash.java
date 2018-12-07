@@ -22,7 +22,7 @@ public class splash extends AppCompatActivity {
 
         splap=(ImageView)findViewById(R.id.spla);
         tvsplashp=(TextView)findViewById(R.id.tv_splash);
-        myfont=Typeface.createFromAsset(this.getAssets(),"fonts/font_1.ttf");
+        myfont=Typeface.createFromAsset(this.getAssets(),"fonts/font_2.ttf");
         tvsplashp.setTypeface(myfont);
 
         Thread T=new Thread()
