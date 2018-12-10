@@ -1,6 +1,7 @@
 package com.example.sujith.patient_diary;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -13,6 +14,7 @@ import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
 
+import org.json.JSONArray;
 import org.json.JSONObject;
 
 public class patient_registration extends AppCompatActivity {
@@ -68,10 +70,24 @@ public class patient_registration extends AppCompatActivity {
 
                             obj1=new JSONObject(content);
                             String s=obj1.getString("status");
+
                             Toast.makeText(patient_registration.this, ""+s,
                                     Toast.LENGTH_SHORT).show();
                             if (s.equals("Success"))
                             {
+                                JSONObject obj2=obj1.getJSONObject("Patient_data");
+                                SharedPreferences sp_pat_reg=getApplicationContext()
+                                        .getSharedPreferences("k1",MODE_PRIVATE);
+                                SharedPreferences.Editor ed=sp_pat_reg.edit();
+                                ed.putString("sid",obj2.getString("pat_id"));
+                                ed.putString("sna",obj2.getString("pat_name"));
+                                ed.putString("sage",obj2.getString("pat_age"));
+                                ed.putString("sdob",obj2.getString("pat_dob"));
+                                ed.putString("sem",obj2.getString("pat_email"));
+                                ed.putString("sph",obj2.getString("pat_phone"));
+                                ed.putString("spass",obj2.getString("pat_password"));
+                                ed.commit();
+
                                 Intent a = new Intent(patient_registration.this,
                                         patient_profile.class);
                                 startActivity(a);

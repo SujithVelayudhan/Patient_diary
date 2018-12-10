@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".f_patient_details"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/f_pat_idtv"
+        android:textColor="@color/colorwhite"
+        android:layout_marginTop="50dp"
+        android:textSize="20dp"
+
+
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/f_pat_namtv"
+        android:textColor="@color/colorwhite"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/f_pat_agetv"
+            android:textColor="@color/colorwhite"
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"
+
+
+            />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/f_pat_dobtv"
+        android:textColor="@color/colorwhite"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/f_pat_emailtv"
+        android:textColor="@color/colorwhite"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/f_pat_phtv"
+        android:textColor="@color/colorwhite"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/f_pat_passtv"
+        android:textColor="@color/colorwhite"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+
+
+        />
+    </LinearLayout>
+
+
+</FrameLayout>

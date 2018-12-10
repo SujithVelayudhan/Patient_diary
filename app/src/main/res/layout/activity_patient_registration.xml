@@ -32,7 +32,7 @@
     <EditText
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:hint="Email id"
+        android:text="hi@gmail.com"
         android:id="@+id/pat_email"
         android:textColor="@color/colorwhite"
         android:layout_gravity="center"
@@ -46,7 +46,7 @@
     <EditText
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:hint="Password"
+        android:text="hi"
         android:id="@+id/pat_password"
         android:textColor="@color/colorwhite"
         android:layout_gravity="center"

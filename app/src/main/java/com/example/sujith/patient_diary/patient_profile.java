@@ -1,8 +1,10 @@
 package com.example.sujith.patient_diary;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.Fragment;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -12,14 +14,20 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 public class patient_profile extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    DrawerLayout drawer;
+    TextView Nav_p_namep,Nav_p_idp;
+    SharedPreferences sp_pat_reg;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_patient_profile);
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -40,6 +48,20 @@ public class patient_profile extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        sp_pat_reg=getApplicationContext()
+                .getSharedPreferences("k1",MODE_PRIVATE);
+
+        View hold=navigationView.getHeaderView(0);
+        Nav_p_idp=(TextView)hold.findViewById(R.id.Nav_p_id);
+        Nav_p_namep=(TextView)hold.findViewById(R.id.Nav_p_name);
+
+
+        Nav_p_namep.setText(sp_pat_reg.getString("sna",null));
+        Nav_p_idp.setText(sp_pat_reg.getString("sid",null));
+
+
+
     }
 
     @Override
@@ -80,8 +102,11 @@ public class patient_profile extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
+        if (id == R.id.pat_details)
+        {
+            f_patient_details fpd=new f_patient_details();
+            loadfragment(fpd);
+
         } else if (id == R.id.nav_gallery) {
 
         } else if (id == R.id.nav_slideshow) {
@@ -98,4 +123,14 @@ public class patient_profile extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+    private void loadfragment(Fragment fr)
+    {
+        android.support.v4.app.FragmentTransaction fragT=
+                getSupportFragmentManager().beginTransaction();
+        fragT.replace(R.id.fram_e,fr);
+        fragT.commit();
+    }
+
+
 }

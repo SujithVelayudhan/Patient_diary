@@ -25,13 +25,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
-        android:hint="pat_id"
+        android:id="@+id/Nav_p_id"
+        android:textStyle="bold"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/Nav_p_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="pat_name" />
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        />
 
 </LinearLayout>
