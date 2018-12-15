@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Patirnt Login"
+        android:text="Patient Login"
         android:textColor="@color/colorwhite"
         android:textSize="20dp"
         android:textStyle="bold"
@@ -70,26 +70,28 @@
         />
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_marginTop="20dp"
         android:orientation="horizontal">
 
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_gravity="center"
         android:text="Forgot Password?"
         android:textColor="@color/colorwhite"
         android:textStyle="bold"
         android:layout_marginLeft="40dp"
+        android:id="@+id/pat_forgot_pass"
 
         />
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:layout_gravity="center"
             android:text="Register Here"
+            android:id="@+id/reg_here"
             android:textColor="@color/colorwhite"
             android:textStyle="bold"
             android:layout_marginLeft="65dp"

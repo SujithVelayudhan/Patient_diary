@@ -1,5 +1,6 @@
 package com.example.sujith.patient_diary;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -34,9 +35,15 @@ public class patient_profile extends AppCompatActivity
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+            public void onClick(View view)
+            {
+//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
+
+                f_pat_update_profile pup=new f_pat_update_profile();
+                loadfragment(pup);
+
+
             }
         });
 
@@ -57,8 +64,8 @@ public class patient_profile extends AppCompatActivity
         Nav_p_namep=(TextView)hold.findViewById(R.id.Nav_p_name);
 
 
-        Nav_p_namep.setText(sp_pat_reg.getString("sna",null));
-        Nav_p_idp.setText(sp_pat_reg.getString("sid",null));
+        Nav_p_namep.setText("Name : "+sp_pat_reg.getString("sna",null));
+        Nav_p_idp.setText("Id : "+sp_pat_reg.getString("sid",null));
 
 
 
@@ -92,6 +99,11 @@ public class patient_profile extends AppCompatActivity
         if (id == R.id.action_settings) {
             return true;
         }
+        if (id==R.id.pat_ch_pass)
+        {
+            f_pat_chage_pass fcp=new f_pat_chage_pass();
+            loadfragment(fcp);
+        }
 
         return super.onOptionsItemSelected(item);
     }
@@ -107,13 +119,17 @@ public class patient_profile extends AppCompatActivity
             f_patient_details fpd=new f_patient_details();
             loadfragment(fpd);
 
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.menu_prescriptions)
+        {
+            f_patient_prescriptions fpp=new f_patient_prescriptions();
+            loadfragment(fpp);
+        }
+        else if (id == R.id.pat_allowed_food)
+        {
+            f_pat_allowed_food fpaf=new f_pat_allowed_food();
+            loadfragment(fpaf);
 
         } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {
 
@@ -132,5 +148,13 @@ public class patient_profile extends AppCompatActivity
         fragT.commit();
     }
 
+    @Override
+    protected void onResume()
+    {
+        super.onResume();
 
+        f_patient_details fpd=new f_patient_details();
+        loadfragment(fpd);
+
+    }
 }

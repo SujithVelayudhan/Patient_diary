@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.loopj.android.http.AsyncHttpClient;
@@ -26,6 +27,8 @@ public class patient_registration extends AppCompatActivity {
     EditText patemailp,patpassp;
     Button patlogBp;
 
+    TextView reg_herep,pat_forgot_passp;
+
     String url="http://srishti-systems.info/projects/patient_diary/api/patient_login.php";
 
     @Override
@@ -40,6 +43,20 @@ public class patient_registration extends AppCompatActivity {
         patemailp=(EditText)findViewById(R.id.pat_email);
         patpassp=(EditText)findViewById(R.id.pat_password);
         patlogBp=(Button)findViewById(R.id.pat_logB);
+
+        reg_herep=(TextView)findViewById(R.id.reg_here);
+        pat_forgot_passp=(TextView)findViewById(R.id.pat_forgot_pass);
+
+        pat_forgot_passp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                Intent to_forgot=new Intent(patient_registration.this,
+                        patient_forgot_password.class);
+                startActivity(to_forgot);
+
+            }
+        });
 
 
 
@@ -108,5 +125,14 @@ public class patient_registration extends AppCompatActivity {
         });
 
 
+        reg_herep.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent re=new Intent(patient_registration.this,register_now.class);
+                startActivity(re);
+            }
+        });
     }
 }

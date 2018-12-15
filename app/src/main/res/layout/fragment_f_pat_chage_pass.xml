@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".f_pat_chage_pass"
+    android:background="@drawable/background">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        >
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/change_pass"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Change Password"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/colorwhite"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_person"
+            android:hint="Patient id"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_person"
+            android:id="@+id/pat_ch_id"
+            android:textColor="@color/colorwhite"
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_password"
+            android:hint="Old Password"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_password"
+            android:id="@+id/pat_ch_oldpass"
+            android:textColor="@color/colorwhite"
+
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_new_password"
+            android:hint="New Password"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_new_password"
+            android:id="@+id/pat_ch_newpass"
+            android:textColor="@color/colorwhite"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round"
+            android:text="submit"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:id="@+id/pat_ch_nB"
+            />
+
+
+
+
+    </LinearLayout>
+
+</FrameLayout>
