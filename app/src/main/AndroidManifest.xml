@@ -25,7 +25,10 @@
             android:label="@string/title_activity_patient_profile"
             android:theme="@style/AppTheme" />
         <activity android:name=".register_now" />
-        <activity android:name=".patient_forgot_password"></activity>
+        <activity android:name=".patient_forgot_password" />
+        <activity android:name=".doctor_login" />
+        <activity android:name=".doc_registration" />
+        <activity android:name=".doc_profile"></activity>
     </application>
 
 </manifest>

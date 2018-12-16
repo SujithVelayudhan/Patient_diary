@@ -11,7 +11,7 @@ import android.widget.LinearLayout;
 
 public class page1 extends AppCompatActivity {
 
-    LinearLayout patient_layoutp;
+    LinearLayout patient_layoutp,doc_layoutp;
 
 
 
@@ -22,6 +22,8 @@ public class page1 extends AppCompatActivity {
 
         patient_layoutp=(LinearLayout)findViewById(R.id.patient_layout);
 
+        doc_layoutp=(LinearLayout)findViewById(R.id.doc_layout);
+
         patient_layoutp.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -29,6 +31,16 @@ public class page1 extends AppCompatActivity {
             {
                 Intent i=new Intent(page1.this,patient_registration.class);
                 startActivity(i);
+            }
+        });
+
+        doc_layoutp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                Intent d=new Intent(page1.this,doctor_login.class);
+                startActivity(d);
+
             }
         });
 

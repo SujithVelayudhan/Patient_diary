@@ -77,14 +77,6 @@
 
         />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/f_pat_passtv"
-        android:textColor="@color/colorwhite"
-        android:layout_marginTop="30dp"
-        android:textSize="20dp"
-
 
         />
     </LinearLayout>

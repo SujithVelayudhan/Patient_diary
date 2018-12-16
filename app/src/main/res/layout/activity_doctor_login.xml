@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".doctor_login"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:padding="15dp"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/img_doctorc"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Doctor Login"
+        android:textColor="@color/colorwhite"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="doc@gmail.com"
+        android:id="@+id/doc_email"
+        android:textColor="@color/colorwhite"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:inputType="text"
+        android:maxLines="1"
+        android:drawableStart="@drawable/ic_email"
+        android:drawableLeft="@drawable/ic_email"
+        android:drawablePadding="10dp"
+        />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="doc"
+        android:id="@+id/doc_password"
+        android:textColor="@color/colorwhite"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:elevation="50dp"
+        android:drawableStart="@drawable/ic_password"
+        android:drawableLeft="@drawable/ic_email"
+        android:drawablePadding="10dp"
+        />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Login"
+        android:id="@+id/doc_logB"
+        android:textStyle="bold"
+        android:textColor="@color/colorwhite"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/round"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:text="Forgot Password?"
+            android:textColor="@color/colorwhite"
+            android:textStyle="bold"
+            android:layout_marginLeft="40dp"
+            android:id="@+id/doc_forgot_pass"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:text="Register Here"
+            android:id="@+id/doc_reg_here"
+            android:textColor="@color/colorwhite"
+            android:textStyle="bold"
+            android:layout_marginLeft="65dp"
+
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".doc_view_pat_frag">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/background">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/img_patient"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Patient Details"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorwhite"
+                android:layout_marginTop="20dp"
+                />
+        </LinearLayout>
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/d_pat_idtv"
+            android:hint="patient id"
+            android:textColor="@color/colorwhite"
+            android:layout_marginTop="50dp"
+            android:textSize="20dp"
+
+
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/d_pat_namtv"
+            android:hint="patient name"
+            android:textColor="@color/colorwhite"
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="patient age"
+            android:id="@+id/d_pat_agetv"
+            android:textColor="@color/colorwhite"
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"
+
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/d_pat_dobtv"
+            android:hint="dob"
+            android:textColor="@color/colorwhite"
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"
+
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/d_pat_emailtv"
+            android:hint="email"
+            android:textColor="@color/colorwhite"
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"
+
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/d_pat_phtv"
+            android:hint="phone"
+            android:textColor="@color/colorwhite"
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"
+
+
+            />
+
+
+        />
+    </LinearLayout>
+
+
+</FrameLayout>

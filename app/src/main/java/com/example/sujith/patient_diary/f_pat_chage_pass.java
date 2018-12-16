@@ -93,11 +93,8 @@ public class f_pat_chage_pass extends Fragment {
 
                                 f_patient_details fm=new f_patient_details();
 
-                                android.support.v4.app.FragmentTransaction fragT=
-                                        getFragmentManager().beginTransaction();
-                                fragT.replace(R.id.fram_e,fm);
-                                fragT.commit();
-
+                                Intent p=new Intent(getContext(),patient_registration.class);
+                                startActivity(p);
 
                             }
                             else

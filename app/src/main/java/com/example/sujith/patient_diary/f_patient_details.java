@@ -17,8 +17,7 @@ import static android.content.Context.MODE_PRIVATE;
  */
 public class f_patient_details extends Fragment {
 
-    TextView f_pat_namtvp,f_pat_idtvp,f_pat_agetvp,f_pat_dobtvp,f_pat_emailtvp,f_pat_phtvp,
-            f_pat_passtvp;
+    TextView f_pat_namtvp,f_pat_idtvp,f_pat_agetvp,f_pat_dobtvp,f_pat_emailtvp,f_pat_phtvp;
 
 
     public f_patient_details() {
@@ -38,7 +37,6 @@ public class f_patient_details extends Fragment {
         f_pat_dobtvp=(TextView)v.findViewById(R.id.f_pat_dobtv);
         f_pat_emailtvp=(TextView)v.findViewById(R.id.f_pat_emailtv);
         f_pat_phtvp=(TextView)v.findViewById(R.id.f_pat_phtv);
-        f_pat_passtvp=(TextView)v.findViewById(R.id.f_pat_passtv);
 
 
 
@@ -52,7 +50,6 @@ public class f_patient_details extends Fragment {
         String pa_dob=sp_pat_reg.getString("sdob",null);
         String pa_email=sp_pat_reg.getString("sem",null);
         String pa_ph=sp_pat_reg.getString("sph",null);
-        String pa_pass=sp_pat_reg.getString("spass",null);
 
         f_pat_idtvp.setText("Id : "+pa_id);
         f_pat_namtvp.setText("Patient Name : "+pa_name);
@@ -60,7 +57,6 @@ public class f_patient_details extends Fragment {
         f_pat_dobtvp.setText("DOB : "+pa_dob);
         f_pat_emailtvp.setText("email id : "+pa_email);
         f_pat_phtvp.setText("Phone no : "+pa_ph);
-        f_pat_passtvp.setText("Password : "+pa_pass);
 
 
 
