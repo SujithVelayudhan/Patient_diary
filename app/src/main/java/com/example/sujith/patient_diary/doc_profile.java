@@ -1,7 +1,9 @@
 package com.example.sujith.patient_diary;
 
 import android.support.annotation.NonNull;
+import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -10,6 +12,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.view.View;
 
 public class doc_profile extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener{
@@ -24,6 +27,18 @@ public class doc_profile extends AppCompatActivity
 
         Toolbar toolbar_d = (Toolbar) findViewById(R.id.doc_toolbar);
         setSupportActionBar(toolbar_d);
+
+        FloatingActionButton fabb = (FloatingActionButton) findViewById(R.id.fabD);
+        fabb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+
+
+            }
+        });
 
         drawer_doc = (DrawerLayout) findViewById(R.id.doc_drawer_layout);
         ActionBarDrawerToggle toggle_doc = new ActionBarDrawerToggle(
@@ -56,6 +71,12 @@ public class doc_profile extends AppCompatActivity
         {
             doc_view_pat_by_id dv=new doc_view_pat_by_id();
             loadfragment(dv);
+
+        }
+        else if (id==R.id.view_prescribed_patient)
+        {
+            doc_view_prescribed_patient dvp=new doc_view_prescribed_patient();
+            loadfragment(dvp);
 
         }
 

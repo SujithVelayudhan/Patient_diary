@@ -12,4 +12,18 @@
 
     </group>
 
+    <item android:title="View">
+        <menu>
+            <item
+                android:id="@+id/view_prescribed_patient"
+                android:icon="@drawable/ic_prescriptions"
+                android:title="View Prescribed Patient" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+
 </menu>

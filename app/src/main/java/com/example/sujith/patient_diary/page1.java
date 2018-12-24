@@ -1,6 +1,8 @@
 package com.example.sujith.patient_diary;
 
 import android.content.Intent;
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -43,6 +45,18 @@ public class page1 extends AppCompatActivity {
 
             }
         });
+
+
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
+    @Override
+    public void onBackPressed()
+    {
+
+        finishAffinity();
+
+        //super.onBackPressed();
 
 
     }

@@ -77,7 +77,11 @@ public class patient_profile extends AppCompatActivity
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
-            super.onBackPressed();
+
+            f_patient_details fpd=new f_patient_details();
+            loadfragment(fpd);
+
+            //super.onBackPressed();
         }
     }
 
@@ -96,8 +100,11 @@ public class patient_profile extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        if (id == R.id.pat_logout)
+        {
+            Intent l=new Intent(getApplicationContext(),page1.class);
+            startActivity(l);
+
         }
         if (id==R.id.pat_ch_pass)
         {
