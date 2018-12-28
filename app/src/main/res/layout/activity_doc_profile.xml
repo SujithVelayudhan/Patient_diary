@@ -37,6 +37,8 @@
 
     </LinearLayout>
 
+    <include layout="@layout/floating_button_doc" />
+
     <android.support.design.widget.NavigationView
         android:id="@+id/doc_nav_view"
         android:layout_width="wrap_content"
@@ -45,7 +47,5 @@
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/nav_header_doc_profile"
         app:menu="@menu/doc_profile_draw" />
-
-    <include layout="@layout/doc_floatbutton" />
 
 </android.support.v4.widget.DrawerLayout>

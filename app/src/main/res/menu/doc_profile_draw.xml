@@ -19,9 +19,9 @@
                 android:icon="@drawable/ic_prescriptions"
                 android:title="View Prescribed Patient" />
             <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+                android:id="@+id/view_diet"
+                android:icon="@drawable/ic_prescriptions"
+                android:title="View Patient Diet" />
         </menu>
     </item>
 

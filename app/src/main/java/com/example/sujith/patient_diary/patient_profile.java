@@ -136,10 +136,6 @@ public class patient_profile extends AppCompatActivity
             f_pat_allowed_food fpaf=new f_pat_allowed_food();
             loadfragment(fpaf);
 
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_send) {
-
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

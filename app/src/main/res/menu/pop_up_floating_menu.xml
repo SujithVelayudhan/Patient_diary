@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Add Diet"
+        android:orderInCategory="2"
+        android:id="@+id/doc_add_diet"
+        />
+    <item
+        android:title="Update Profile"
+        android:orderInCategory="1"
+        android:id="@+id/doc_update"
+        />
+</menu>

@@ -12,14 +12,7 @@
             android:id="@+id/pat_allowed_food"
             android:icon="@drawable/ic_menu_gallery"
             android:title="Patient Allowed Food" />
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
-        <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+
     </group>
 
     <item android:title="View">
@@ -28,10 +21,7 @@
                 android:id="@+id/menu_prescriptions"
                 android:icon="@drawable/ic_prescriptions"
                 android:title="Prescriptions" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+
         </menu>
     </item>
 
